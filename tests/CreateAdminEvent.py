@@ -69,7 +69,7 @@ class TestCreateAdminEvent(unittest.TestCase):
         eventsButton = driver.find_element_by_css_selector("#mySidebar > a:nth-child(4)")
         eventsButton.click()
 
-        eventPresent = driver.find_element_by_css_selector("body > div:nth-child(5) > table > tbody > tr:nth-child(4) > td:nth-child(1)")
+        eventPresent = driver.find_element_by_css_selector("body > div.row > div:nth-child(2) > table > tbody > tr:nth-child(4) > td:nth-child(1)")
 
         if eventPresent.is_displayed():
             print("Event Saved and Seen was successful!")

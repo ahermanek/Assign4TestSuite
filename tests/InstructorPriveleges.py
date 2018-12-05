@@ -29,7 +29,7 @@ class ShadyOaksTestUserPrivileges(unittest.TestCase):
         elem = driver.find_element_by_css_selector("#content-main > ul > li > a").click()
         time.sleep(5)
         elem = driver.find_element_by_id("id_username")
-        elem.send_keys("tester")
+        elem.send_keys("AllyAutoTest")
         elem = driver.find_element_by_id("id_password1")
         elem.send_keys("maverick1a")
         time.sleep(5)
@@ -46,7 +46,7 @@ class ShadyOaksTestUserPrivileges(unittest.TestCase):
         driver.get("http://127.0.0.1:8000/admin")
         time.sleep(5)
         elem = driver.find_element_by_id("id_username")
-        elem.send_keys("tester")
+        elem.send_keys("AllyAutoTest")
         time.sleep(5)
         elem = driver.find_element_by_id("id_password")
         elem.send_keys("maverick1a")
@@ -72,7 +72,7 @@ class ShadyOaksTestUserPrivileges(unittest.TestCase):
         elem = driver.find_element_by_css_selector("#content-main > div.app-auth.module > "
                                                    "table > tbody > tr.model-user > th > a").click()
         search = driver.find_element_by_css_selector("#searchbar")
-        search.send_keys("tester")
+        search.send_keys("AllyAutoTest")
         submitsearch = driver.find_element_by_css_selector("#changelist-search > div > "
                                                            "input[type='submit']:nth-child(3)")
         submitsearch.click()

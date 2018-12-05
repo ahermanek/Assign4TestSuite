@@ -29,7 +29,7 @@ class Tee_Test_adduser(unittest.TestCase):
         # Begin add user part of test
         driver.get('http://127.0.0.1:8000/admin/auth/user/add/')
         username_text_field = driver.find_element_by_id("id_username")
-        user = "Mary"
+        user = "MichelAutoTest"
         username_text_field.send_keys(user)
         pwd1_text_field = driver.find_element_by_id("id_password1")
 
