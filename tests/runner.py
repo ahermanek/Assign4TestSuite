@@ -9,6 +9,8 @@ from tests import AdminAddUser
 from tests import InstructorPriveleges
 from tests import UserPrivileges
 from tests import ContactNavBar
+from tests import ValidateUserButtons
+from tests import ValidateUserAccess
 
 
 def suite():
@@ -23,6 +25,8 @@ def suite():
     tests.addTest(loader.loadTestsFromModule(InstructorPriveleges))
     tests.addTest(loader.loadTestsFromModule(UserPrivileges))
     tests.addTest(loader.loadTestsFromModule(ContactNavBar))
+    tests.addTest(loader.loadTestsFromModule(ValidateUserButtons))
+    tests.addTest(loader.loadTestsFromModule(ValidateUserAccess))
     return tests
 
 
