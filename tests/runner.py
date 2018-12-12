@@ -11,7 +11,7 @@ from tests import UserPrivileges
 from tests import ContactNavBar
 from tests import ValidateUserButtons
 from tests import ValidateUserAccess
-
+from tests import AdminAddGroup
 
 def suite():
     loader = unittest.TestLoader()
@@ -27,6 +27,7 @@ def suite():
     tests.addTest(loader.loadTestsFromModule(ContactNavBar))
     tests.addTest(loader.loadTestsFromModule(ValidateUserButtons))
     tests.addTest(loader.loadTestsFromModule(ValidateUserAccess))
+    tests.addTest(loader.loadTestsFromModule(AdminAddGroup))
     return tests
 
 
